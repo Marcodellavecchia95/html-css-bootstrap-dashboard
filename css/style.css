@@ -2,3 +2,9 @@
   border: none;
   border-bottom: 1px solid lightgray;
 }
+
+.separation-row {
+  height: 1px;
+  width: 100%;
+  background-color: lightgray;
+}
