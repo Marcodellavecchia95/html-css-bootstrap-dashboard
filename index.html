@@ -91,9 +91,154 @@
           <div class="col12 col-lg-8">
             <div class="mt-4 d-flex justify-content-between">
               <h3>Catalogo Libri</h3>
-              <a class="btn btn-primary" href="./add-book.html" role="button"
-                >Aggiungi libro</a
+              <a
+                class="btn btn-primary"
+                data-bs-toggle="offcanvas"
+                href="#offcanvasExample"
+                role="button"
+                aria-controls="offcanvasExample"
               >
+                Aggiungi Libro
+              </a>
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel"
+              >
+                <div class="container mt-4">
+                  <h1 class="mb-4">Nuovo Libro</h1>
+
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <label
+                        for="exampleFormControlInput1"
+                        class="form-label fw-semibold"
+                        >Nome autore</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Inserisci il nome dell'autore"
+                        aria-label="First name"
+                      />
+                    </div>
+                    <div class="col-6">
+                      <label
+                        for="exampleFormControlInput1"
+                        class="form-label fw-semibold"
+                        >Cognome Autore</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Inserisci il cognome dell'autore"
+                        aria-label="Last name"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <label
+                        for="exampleInputText1"
+                        class="form-label fw-semibold"
+                        >Titolo</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleInputText1"
+                        aria-describedby="textHelp"
+                        placeholder="Inserisci il titolo del libro"
+                      />
+                      <div id="textHelp" class="form-text mb-4">
+                        Titolo versione italiana
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-5 gy-3">
+                    <div class="col-12">
+                      <label
+                        for="exampleFormControlInput1"
+                        class="form-label fw-semibold"
+                        >Genere</label
+                      >
+                      <select
+                        class="form-select fw-semibold"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Scegli il genere</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <label
+                        for="exampleFormControlInput1"
+                        class="form-label fw-semibold"
+                        >Anno di pubblicazione</label
+                      >
+                      <input
+                        type="date"
+                        class="form-control"
+                        placeholder="Inserisci l'anno"
+                        aria-label="Last name"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label
+                        for="exampleFormControlInput1"
+                        class="form-label fw-semibold"
+                        >ISBN#</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Inserisci il codice ISBN#"
+                        aria-label="Last name"
+                      />
+                    </div>
+                  </div>
+                  <div class="separation-row"></div>
+                  <div class="row">
+                    <div class="col-12">
+                      <form>
+                        <div class="my-4">
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label fw-semibold"
+                            >Note</label
+                          >
+                          <div class="form-text">
+                            <textarea
+                              class="form-control"
+                              placeholder="Inserisci eventuali note sul libro"
+                              id="floatingTextarea"
+                              rows="3"
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="exampleCheck1"
+                          />
+                          <label
+                            class="form-check-label fw-semibold"
+                            for="exampleCheck1"
+                            >Disponibile anche in digitale</label
+                          >
+                        </div>
+                        <a href="./index.html" class="btn btn-primary"
+                          >Aggiungi Libro</a
+                        >
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <table class="table table-striped">
               <thead>
